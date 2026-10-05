@@ -1,0 +1,1605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nucleus International Schools | Cambridge Curriculum in Addis Ababa</title>
+  <meta name="description" content="Nucleus International Schools Addis Ababa delivers the world-renowned Cambridge curriculum from age 2 through Grade 8. Featuring hands-on robotics & AI, secure campuses in Vatican and Abo, chef-prepared nutrition, and organic agriculture." />
+  
+  <!-- Favicon -->
+  <link rel="icon" href="https://nucleusinternationalschoolsystem.com/favicon-32.png" type="image/png" />
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <!-- ==========================================================================
+       Top Utility & Announcement Bar
+       ========================================================================== -->
+  <aside class="top-announcement-bar" aria-label="Announcement">
+    <div class="announcement-inner">
+      <div class="announcement-msg">
+        <span class="badge-pulse">Now Enrolling 2026/27</span>
+        <span>Admissions open for Early Years through Grade 8 • Vatican & Mekanisa Abo Campuses</span>
+      </div>
+      <div class="top-utilities">
+        <a href="tel:0981999922" class="util-link">
+          <span>📞</span> <span>09 81 99 99 22</span>
+        </a>
+        <a href="#campuses" class="util-link">
+          <span>📍</span> <span>Vatican & Abo Campuses</span>
+        </a>
+        <button id="langToggleBtn" class="lang-switch-btn" type="button" aria-label="Switch Language">
+          <span>🌐</span> <span id="currentLangLabel">EN / አማ</span>
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       Main Sticky Header (ICS-Inspired Dual Polish)
+       ========================================================================== -->
+  <header class="main-header" id="mainHeader">
+    <div class="header-container">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="brand-logo-wrap" aria-label="Nucleus International Schools Home">
+        <img
+          src="https://nucleusinternationalschoolsystem.com/api/media/file/nucleus-logo.webp"
+          alt="Nucleus International Schools"
+          class="brand-logo-img"
+          onerror="this.onerror=null;this.src='https://nucleusinternationalschoolsystem.com/favicon-32.png';this.classList.add('logo-fallback');"
+        />
+        <div class="brand-logo-text">
+          <span class="brand-name">NUCLEUS</span>
+          <span class="brand-sub">International Schools</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Menu -->
+      <nav class="nav-menu-desktop" aria-label="Primary Navigation">
+        <a href="#academics" class="nav-link">Academics</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#facilities" class="nav-link">Campus Life</a>
+        <a href="#pathway" class="nav-link">Cambridge Pathway</a>
+        <a href="#campuses" class="nav-link">Campuses</a>
+        <a href="#admissions" class="nav-link">Tuition & Fees</a>
+        <a href="#faqs" class="nav-link">FAQs</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="header-actions">
+        <button class="btn btn-secondary" id="openTourModalBtn" type="button">
+          Book a Tour
+        </button>
+        <a href="#admissions" class="btn btn-primary">
+          Apply Now
+        </a>
+        <button class="mobile-menu-toggle" id="mobileMenuBtn" type="button" aria-label="Toggle Mobile Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Off-Canvas Mobile Menu -->
+  <div class="offcanvas-menu" id="offcanvasMenu">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+      <div style="display:flex;align-items:center;gap:0.6rem;">
+        <img
+          src="https://nucleusinternationalschoolsystem.com/api/media/file/nucleus-logo.webp"
+          alt="Nucleus International Schools"
+          style="height:36px;width:auto;object-fit:contain;"
+          onerror="this.style.display='none';"
+        />
+        <span class="brand-name" style="font-size: 1.2rem;">NUCLEUS</span>
+      </div>
+      <button id="closeOffcanvasBtn" style="font-size: 1.5rem; color: var(--color-navy-900);">&times;</button>
+    </div>
+    <nav style="display: flex; flex-direction: column; gap: 1.25rem; font-size: 1.1rem; font-weight: 700;">
+      <a href="#academics" class="mobile-nav-item">Academics</a>
+      <a href="#experience" class="mobile-nav-item">Experience</a>
+      <a href="#facilities" class="mobile-nav-item">Campus Life</a>
+      <a href="#pathway" class="mobile-nav-item">Cambridge Pathway</a>
+      <a href="#campuses" class="mobile-nav-item">Campuses & Totot</a>
+      <a href="#admissions" class="mobile-nav-item">Tuition & Fee Estimator</a>
+      <a href="#faqs" class="mobile-nav-item">Parents FAQ</a>
+      <a href="#blog" class="mobile-nav-item">News & Insights</a>
+    </nav>
+    <div style="margin-top: auto; display: flex; flex-direction: column; gap: 0.75rem; padding-top: 1.5rem;">
+      <button class="btn btn-primary" id="mobileBookTourBtn" style="width: 100%;">Book a Campus Tour</button>
+      <a href="tel:0981999922" class="btn btn-secondary" style="width: 100%;">Call Admissions</a>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ==========================================================================
+         Hero Section — ICS Addis Style: Crystal-Clear Video, Text Left Panel
+         ========================================================================== -->
+    <section class="hero-section" id="hero">
+
+      <!-- Full-screen video — no dimming on the right -->
+      <div class="hero-backdrop">
+        <video
+          class="hero-bg-video"
+          autoplay
+          muted
+          loop
+          playsinline
+          poster="https://nucleusinternationalschoolsystem.com/video/tvc-teaser-poster.webp"
+          aria-hidden="true"
+        >
+          <source src="https://nucleusinternationalschoolsystem.com/video/nucleus-tvc-en.mp4" type="video/mp4" />
+          <img
+            src="https://nucleusinternationalschoolsystem.com/video/tvc-teaser-poster.webp"
+            alt="Nucleus International Schools Campus"
+            class="hero-bg-img"
+          />
+        </video>
+        <!-- Gradient covers LEFT side only so right video is crystal clear -->
+        <div class="hero-overlay"></div>
+      </div>
+
+      <!-- Text anchored bottom-left -->
+      <div class="hero-content-wrap">
+        <div class="hero-text-panel">
+
+          <div class="hero-badge-pill">
+            <span>🏛️</span> Cambridge International Pathway · Addis Ababa
+          </div>
+
+          <div class="hero-motto-amharic">
+            <span>«</span> ትምህርት ከደብተር ያልፋል <span>»</span>
+          </div>
+
+          <h1 class="hero-title">
+            Think Deeply.<br />
+            Create Boldly.<br />
+            <span class="highlight">Solve Truly.</span>
+          </h1>
+
+          <p class="hero-desc">
+            A world-class Cambridge education in Sarbet &amp; Mekanisa, Addis Ababa —
+            raising curious, confident children from age 2 through Grade 8
+            with robotics, science discovery, and holistic care.
+          </p>
+
+          <div class="hero-actions-row">
+            <button class="btn btn-primary" id="heroBookTourBtn" type="button">
+              Book a Campus Tour <span>→</span>
+            </button>
+            <a href="#academics" class="btn btn-ghost-white">
+              Our Programmes
+            </a>
+            <button class="hero-video-trigger" id="openVideoModalBtn" type="button">
+              <span class="video-play-icon">▶</span>
+              <span>Watch Campus Film</span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Stats band pinned to the bottom of the hero -->
+      <div class="hero-stats-band">
+        <div class="container hero-stats-grid">
+          <div class="stat-item">
+            <div class="stat-num">Pre K–G8</div>
+            <div class="stat-label">Cambridge Pathway</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">8 : 1</div>
+            <div class="stat-label">Student-Teacher Ratio</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">STEM &amp; AI</div>
+            <div class="stat-label">Robotics From Age 4</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">100% Chef</div>
+            <div class="stat-label">Cooked Organic Meals</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">3 Campuses</div>
+            <div class="stat-label">Vatican · Abo · Totot</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         Bento Infographics Grid ("Why Leaders Choose Nucleus")
+         ========================================================================== -->
+    <section class="section section-cream" id="academics">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-eyebrow">Why Leaders Choose Nucleus</span>
+          <h2 class="section-title">An Education Built for the Global Century</h2>
+          <p class="section-subtitle">
+            Beyond standard textbook memorization, Nucleus fosters self-aware problem solvers 
+            prepared to thrive anywhere in the world.
+          </p>
+        </div>
+
+        <div class="bento-grid">
+          
+          <!-- Tile 1: Cambridge Pathway (Large Col-8) -->
+          <article class="bento-card col-8 card-navy">
+            <div class="bento-icon-badge">🎓</div>
+            <span class="bento-tag">Academic Rigor & Portability</span>
+            <h3 class="bento-title">The Cambridge International Curriculum</h3>
+            <p class="bento-desc">
+              Recognized by top universities and international schools in over 160 countries. 
+              Our planned pathway from Early Years to Grade 8 develops critical thinking, linguistic agility, 
+              and inquiry-driven mastery that transitions seamlessly across continents.
+            </p>
+            <div class="bento-stat-pill">
+              <span class="bento-stat-val">160+</span>
+              <span class="bento-stat-sub">Countries worldwide accept Cambridge credentials</span>
+            </div>
+          </article>
+
+          <!-- Tile 2: Robotics & STEM (Col-4) -->
+          <article class="bento-card col-4">
+            <div class="bento-icon-badge">🤖</div>
+            <span class="bento-tag">Future-Ready Skills</span>
+            <h3 class="bento-title">Robotics, AI & Coding Labs</h3>
+            <p class="bento-desc">
+              Hands-on engineering using LEGO Education SPIKE, Arduino, Python, and mechanical problem-solving 
+              integrated directly into weekly learning.
+            </p>
+            <div class="bento-stat-pill">
+              <span class="bento-stat-val">Age 4+</span>
+              <span class="bento-stat-sub">Early computational thinking</span>
+            </div>
+          </article>
+
+          <!-- Tile 3: Advanced Security & Location (Col-4) -->
+          <article class="bento-card col-4">
+            <div class="bento-icon-badge">🛡️</div>
+            <span class="bento-tag">Safety First</span>
+            <h3 class="bento-title">Secure Vatican Diplomatic Zone</h3>
+            <p class="bento-desc">
+              Controlled access, biometric checks, and full surveillance behind the Vatican Embassy in Sarbet. 
+              Drop off your child with total peace of mind.
+            </p>
+            <div class="bento-stat-pill">
+              <span class="bento-stat-val">24 / 7</span>
+              <span class="bento-stat-sub">Protected campus environment</span>
+            </div>
+          </article>
+
+          <!-- Tile 4: Chef-Prepared Nutrition (Col-4) -->
+          <article class="bento-card col-4 card-ochre-tint">
+            <div class="bento-icon-badge">🥗</div>
+            <span class="bento-tag">Healthy Body, Active Mind</span>
+            <h3 class="bento-title">Chef-Prepared Campus Nutrition</h3>
+            <p class="bento-desc">
+              Fresh, balanced, and delicious hot lunches and morning snacks prepared daily by professional chefs 
+              using fresh farm produce.
+            </p>
+            <div class="bento-stat-pill">
+              <span class="bento-stat-val">Fresh Daily</span>
+              <span class="bento-stat-sub">Zero processed cafeteria food</span>
+            </div>
+          </article>
+
+          <!-- Tile 5: Agriculture & Animal Care (Col-4) -->
+          <article class="bento-card col-4">
+            <div class="bento-icon-badge">🌱</div>
+            <span class="bento-tag">Holistic Life Skills</span>
+            <h3 class="bento-title">Living Farm & Animal Care</h3>
+            <p class="bento-desc">
+              Students grow vegetables, care for animals, and study ecosystem balance on campus, 
+              building empathy, responsibility, and scientific observation.
+            </p>
+            <div class="bento-stat-pill">
+              <span class="bento-stat-val">Farm to Fork</span>
+              <span class="bento-stat-sub">Hands-on botanical responsibility</span>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Interactive "School Experience" Tabbed Panel (Inspired by ICS Accordion)
+         ========================================================================== -->
+    <section class="section" id="experience">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-eyebrow">The Nucleus Experience</span>
+          <h2 class="section-title">Where Wonder Meets Purpose</h2>
+          <p class="section-subtitle">
+            Explore the core pillars that create an unforgettable learning journey every single day.
+          </p>
+        </div>
+
+        <!-- Experience Tab Buttons -->
+        <div class="experience-tabs-nav" role="tablist">
+          <button class="exp-tab-btn active" data-tab="learning" role="tab" aria-selected="true">
+            <span>📚</span> Cambridge Learning
+          </button>
+          <button class="exp-tab-btn" data-tab="robotics" role="tab" aria-selected="false">
+            <span>⚡</span> Robotics & STEM
+          </button>
+          <button class="exp-tab-btn" data-tab="campus-life" role="tab" aria-selected="false">
+            <span>🏫</span> Campus Community
+          </button>
+          <button class="exp-tab-btn" data-tab="farm" role="tab" aria-selected="false">
+            <span>🌿</span> Farm & Nutrition
+          </button>
+          <button class="exp-tab-btn" data-tab="arts-sport" role="tab" aria-selected="false">
+            <span>⚽</span> Arts & Athletics
+          </button>
+        </div>
+
+        <!-- Tab Panels Wrapper -->
+        <div class="exp-panel-wrapper">
+          
+          <!-- Panel 1: Cambridge Learning -->
+          <div class="exp-panel active" id="panel-learning">
+            <div class="exp-panel-body">
+              <span class="exp-panel-badge">Academic Core</span>
+              <h3 class="exp-panel-title">Inquiry-Led Cambridge Education</h3>
+              <p class="exp-panel-lead">
+                We believe education should inspire deep thinking rather than rote repetition. Our certified Cambridge 
+                curriculum empowers children to ask "why" and "how", building independent research and analytical skills.
+              </p>
+              <div class="exp-checklist">
+                <div class="exp-check-item">
+                  <span class="check-icon">✓</span>
+                  <span><strong>Global Cambridge Checkpoint</strong> standards from primary to middle school.</span>
+                </div>
+                <div class="exp-check-item">
+                  <span class="check-icon">✓</span>
+                  <span><strong>Multilingual staff</strong> offering native English immersion with French & Amharic enrichment.</span>
+                </div>
+                <div class="exp-check-item">
+                  <span class="check-icon">✓</span>
+                  <span><strong>Small class sizes</strong> with an average 8:1 student-to-teacher ratio.</span>
+                </div>
+              </div>
+              <div>
+                <a href="#pathway" class="btn btn-secondary">Explore Academic Stages →</a>
+              </div>
+            </div>
+            <div class="exp-panel-media">
+              <img 
+                src="https://nucleusinternationalschoolsystem.com/api/media/file/gallery-classroom.webp" 
+                alt="Cambridge Classroom at Nucleus" 
+                class="exp-panel-img"
+              />
+              <div class="exp-media-overlay-card">
+                <div class="exp-overlay-title">Vatican Grade School Classrooms</div>
+                <div class="exp-overlay-desc">Ergonomic, natural daylight, interactive digital displays</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel 2: Robotics & STEM -->
+          <div class="exp-panel" id="panel-robotics">
+            <div class="exp-panel-body">
+              <span class="exp-panel-badge">Innovation Studio</span>
+              <h3 class="exp-panel-title">Code, Construct & Innovate</h3>
+              <p class="exp-panel-lead">
+                In our dedicated STEM and Robotics labs, students don't just consume technology—they build it. 
+                From building pneumatic gears in Early Years to programming microcontrollers in Grade 7 & 8.
+              </p>
+              <div class="exp-checklist">
+                <div class="exp-check-item">
+                  <span class="check-icon">✓</span>
+                  <span><strong>LEGO Education SPIKE Prime</strong> and WeDo hands-on robotics engineering.</span>
+                </div>
+                <div class="exp-check-item">
+                  <span class="check-icon">✓</span>
+                  <span><strong>Coding Languages</strong>: Scratch block programming transitioning into Python.</span>
+                </div>
+                <div class="exp-check-item">
+                  <span class="check-icon">✓</span>
+                  <span><strong>Science Discovery</strong> with wet chemistry, optics, and solar energy kits.</span>
+                </div>
+              </div>
+              <div>
+                <button class="btn btn-primary" onclick="openTourModal()">Visit the STEM Lab →</button>
+              </div>
+            </div>
+            <div class="exp-panel-media">
+              <img 
+                src="https://nucleusinternationalschoolsystem.com/api/media/file/gallery-stem.webp" 
+                alt="Robotics and STEM at Nucleus" 
+                class="exp-panel-img"
+              />
+              <div class="exp-media-overlay-card">
+                <div class="exp-overlay-title">STEM & AI Innovation Lab</div>
+                <div class="exp-overlay-desc">Hands-on robotics kits, 3D printers, and coding stations</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel 3: Campus Community -->
+          <div class="exp-panel" id="panel-campus-life">
+            <div class="exp-panel-body">
+              <span class="exp-panel-badge">School Culture</span>
+              <h3 class="exp-panel-title">Safe, Joyful & International</h3>
+              <p class="exp-panel-lead">
+                Nucleus brings together local Ethiopian professionals, international diplomats, and expat families 
+                in an inclusive environment where every child is known, celebrated, and supported.
+              </p>
+              <div class="exp-checklist">
+                <div class="exp-check-item">
+                  <span class="check-icon">✓</span>
+                  <span><strong>Total Campus Safety</strong>: Gated embassy district, visitor ID vetting, security team.</span>
+                </div>
+                <div class="exp-check-item">
+                  <span class="check-icon">✓</span>
+                  <span><strong>Active Parent Community</strong>: Open communication, transparent fee policies, regular progress clinics.</span>
+                </div>
+                <div class="exp-check-item">
+                  <span class="check-icon">✓</span>
+                  <span><strong>Character Education</strong>: Resilience, kindness, humility, and global responsibility.</span>
+                </div>
+              </div>
+              <div>
+                <a href="#campuses" class="btn btn-secondary">Explore Our Campuses →</a>
+              </div>
+            </div>
+            <div class="exp-panel-media">
+              <img 
+                src="https://nucleusinternationalschoolsystem.com/api/media/file/gallery-campus.webp" 
+                alt="Nucleus Campus Grounds" 
+                class="exp-panel-img"
+              />
+              <div class="exp-media-overlay-card">
+                <div class="exp-overlay-title">Sarbet Vatican Campus</div>
+                <div class="exp-overlay-desc">Spacious green lawns, security checkpoints, and play spaces</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel 4: Farm & Nutrition -->
+          <div class="exp-panel" id="panel-farm">
+            <div class="exp-panel-body">
+              <span class="exp-panel-badge">Holistic Well-being</span>
+              <h3 class="exp-panel-title">Farm to Plate Learning</h3>
+              <p class="exp-panel-lead">
+                We believe well-nourished bodies learn better. Our on-campus garden teaches children how food grows, 
+                while our professional chefs craft balanced, nutritious meals without artificial additives.
+              </p>
+              <div class="exp-checklist">
+                <div class="exp-check-item">
+                  <span class="check-icon">✓</span>
+                  <span><strong>Daily Chef-Cooked Lunch</strong>: Organic grains, vegetables, lean protein, and fresh fruits.</span>
+                </div>
+                <div class="exp-check-item">
+                  <span class="check-icon">✓</span>
+                  <span><strong>Campus Animal Care</strong>: Caring for school rabbits, ducks, and organic horticulture beds.</span>
+                </div>
+                <div class="exp-check-item">
+                  <span class="check-icon">✓</span>
+                  <span><strong>Food Allergy Protocols</strong>: Dedicated dietary care for sensitive students.</span>
+                </div>
+              </div>
+              <div>
+                <button class="btn btn-primary" onclick="openTourModal()">Schedule a Campus Visit →</button>
+              </div>
+            </div>
+            <div class="exp-panel-media">
+              <img 
+                src="https://nucleusinternationalschoolsystem.com/images/stock/globe-3.webp" 
+                alt="Campus Agriculture and Nutrition" 
+                class="exp-panel-img"
+              />
+              <div class="exp-media-overlay-card">
+                <div class="exp-overlay-title">Campus Greenhouses & Culinary Center</div>
+                <div class="exp-overlay-desc">Cultivating real responsibility and nutritional excellence</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel 5: Arts & Athletics -->
+          <div class="exp-panel" id="panel-arts-sport">
+            <div class="exp-panel-body">
+              <span class="exp-panel-badge">Beyond the Books</span>
+              <h3 class="exp-panel-title">Athletic Agility & Creative Fire</h3>
+              <p class="exp-panel-lead">
+                Physical education, competitive sports, martial arts, drama, and musical instruments give every student 
+                a platform to express themselves, build teamwork, and cultivate physical discipline.
+              </p>
+              <div class="exp-checklist">
+                <div class="exp-check-item">
+                  <span class="check-icon">✓</span>
+                  <span><strong>Martial Arts & Taekwondo</strong>: Discipline, focus, and coordination.</span>
+                </div>
+                <div class="exp-check-item">
+                  <span class="check-icon">✓</span>
+                  <span><strong>Sports Fields</strong>: Football, basketball, agility circuits, and athletics.</span>
+                </div>
+                <div class="exp-check-item">
+                  <span class="check-icon">✓</span>
+                  <span><strong>Music & Performing Arts</strong>: Vocal training, piano, drums, and school drama productions.</span>
+                </div>
+              </div>
+              <div>
+                <a href="#mosaic" class="btn btn-secondary">See Activities Grid →</a>
+              </div>
+            </div>
+            <div class="exp-panel-media">
+              <img 
+                src="https://nucleusinternationalschoolsystem.com/api/media/file/gallery-sports.webp" 
+                alt="Sports and Athletics at Nucleus" 
+                class="exp-panel-img"
+              />
+              <div class="exp-media-overlay-card">
+                <div class="exp-overlay-title">Athletics Court & Playground</div>
+                <div class="exp-overlay-desc">Team sports, coordination training, and supervised outdoor games</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Age-to-Grade Cambridge Pathway Matrix
+         ========================================================================== -->
+    <section class="section section-cream" id="pathway">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-eyebrow">Academic Roadmap</span>
+          <h2 class="section-title">The Cambridge Pathway: From Age 2 to Grade 8</h2>
+          <p class="section-subtitle">
+            Explore how our international curriculum scaffolds your child's growth at each developmental milestone.
+          </p>
+        </div>
+
+        <div class="pathway-matrix-wrap">
+          
+          <!-- Stage Selector Buttons -->
+          <div class="pathway-selector-row">
+            <button class="stage-btn active" data-stage="early-years" type="button">
+              <div class="stage-badge">Stage 1</div>
+              <div class="stage-name">Early Years Foundation</div>
+              <div class="stage-ages">Ages 2 – 5 (Pre-K, KG1, KG2)</div>
+            </button>
+            <button class="stage-btn" data-stage="primary" type="button">
+              <div class="stage-badge">Stage 2</div>
+              <div class="stage-name">Cambridge Primary</div>
+              <div class="stage-ages">Ages 5 – 11 (Grades 1 – 5)</div>
+            </button>
+            <button class="stage-btn" data-stage="lower-secondary" type="button">
+              <div class="stage-badge">Stage 3</div>
+              <div class="stage-name">Lower Secondary</div>
+              <div class="stage-ages">Ages 11 – 14 (Grades 6 – 8)</div>
+            </button>
+          </div>
+
+          <!-- Dynamic Stage Detail Card -->
+          <div class="stage-detail-card" id="stageDetailCard">
+            <!-- Populated via main.js -->
+            <div>
+              <span class="stage-badge" id="dynStageBadge">Stage 1: Early Years</span>
+              <h3 class="section-title" id="dynStageTitle" style="font-size: 1.8rem; margin-top: 0.25rem;">
+                Early Years Foundation (Ages 2–5)
+              </h3>
+              <p class="section-subtitle" id="dynStageDesc" style="font-size: 1rem;">
+                A nurturing, play-based immersion where sensory exploration, early phonics, numeracy, 
+                and emotional security lay the bedrock for lifelong curiosity.
+              </p>
+
+              <div class="stage-highlights-list" id="dynStageHighlights">
+                <div class="stage-highlights-item"><span>🌟</span> Reggio Emilia & Montessori-inspired sensory stations</div>
+                <div class="stage-highlights-item"><span>🗣️</span> Dual-language immersion & phonics phonemic awareness</div>
+                <div class="stage-highlights-item"><span>🧩</span> Early gross and fine motor skills coordination</div>
+              </div>
+            </div>
+
+            <div style="border-left: 1px solid rgba(217, 119, 6, 0.2); padding-left: 1.5rem;">
+              <h4 style="font-family: var(--font-display); font-weight: 700; color: var(--color-navy-900); margin-bottom: 0.5rem;">
+                Key Learning Domains:
+              </h4>
+              <div class="stage-subjects-grid" id="dynStageSubjects">
+                <span class="subject-tag">Early Literacy & Phonics</span>
+                <span class="subject-tag">Number Sense & Math Play</span>
+                <span class="subject-tag">Physical Movement</span>
+                <span class="subject-tag">Sensory Exploration</span>
+                <span class="subject-tag">Music & Rhythm</span>
+                <span class="subject-tag">Emotional Socialization</span>
+              </div>
+
+              <div style="margin-top: 2rem;">
+                <button class="btn btn-primary" onclick="openTourModal()" style="width: 100%;">
+                  Inquire for This Age Group
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Campus Facilities Carousel (ICS Addis Style Showcase)
+         ========================================================================== -->
+    <section class="section" id="facilities">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-eyebrow">World-Class Facilities</span>
+          <h2 class="section-title">Spaces Designed to Inspire Excellence</h2>
+          <p class="section-subtitle">
+            Purpose-built modern classrooms, science discovery stations, and outdoor playgrounds.
+          </p>
+        </div>
+
+        <div class="facilities-slider-wrap">
+          <div class="facilities-track" id="facilitiesTrack">
+            
+            <!-- Facility 1: STEM & AI Lab -->
+            <div class="facility-card">
+              <div class="facility-img-wrap">
+                <img src="https://nucleusinternationalschoolsystem.com/api/media/file/gallery-stem.webp" alt="STEM and Robotics Innovation Studio" />
+                <span class="facility-badge-pos">Vatican Campus</span>
+              </div>
+              <div class="facility-body">
+                <h3 class="facility-title">Robotics & AI Studio</h3>
+                <p class="facility-desc">Equipped with LEGO Education SPIKE, electronic prototyping boards, and coding laptops for young inventors.</p>
+              </div>
+            </div>
+
+            <!-- Facility 2: Cambridge Classrooms -->
+            <div class="facility-card">
+              <div class="facility-img-wrap">
+                <img src="https://nucleusinternationalschoolsystem.com/api/media/file/gallery-classroom.webp" alt="Cambridge Classrooms" />
+                <span class="facility-badge-pos">All Campuses</span>
+              </div>
+              <div class="facility-body">
+                <h3 class="facility-title">Inquiry Classrooms</h3>
+                <p class="facility-desc">Flexible seating, natural ventilation, and interactive audio-visual displays for small-group collaboration.</p>
+              </div>
+            </div>
+
+            <!-- Facility 3: Sports Court & Pitch -->
+            <div class="facility-card">
+              <div class="facility-img-wrap">
+                <img src="https://nucleusinternationalschoolsystem.com/api/media/file/gallery-sports.webp" alt="Sports Grounds" />
+                <span class="facility-badge-pos">Sarbet Vatican</span>
+              </div>
+              <div class="facility-body">
+                <h3 class="facility-title">Athletic Pitch & Courts</h3>
+                <p class="facility-desc">Safe, shock-absorbing play surfaces for football, basketball, track & field, and martial arts.</p>
+              </div>
+            </div>
+
+            <!-- Facility 4: Campus Grounds -->
+            <div class="facility-card">
+              <div class="facility-img-wrap">
+                <img src="https://nucleusinternationalschoolsystem.com/api/media/file/gallery-campus.webp" alt="Campus Quad" />
+                <span class="facility-badge-pos">Vatican Campus</span>
+              </div>
+              <div class="facility-body">
+                <h3 class="facility-title">Secure Quadrangle</h3>
+                <p class="facility-desc">Beautiful gardens and tree-lined avenues protected behind embassy security perimeters.</p>
+              </div>
+            </div>
+
+            <!-- Facility 5: Preschool Abo Campus -->
+            <div class="facility-card">
+              <div class="facility-img-wrap">
+                <img src="https://nucleusinternationalschoolsystem.com/video/hero-poster.webp" alt="Preschool Campus" />
+                <span class="facility-badge-pos">Mekanisa Abo</span>
+              </div>
+              <div class="facility-body">
+                <h3 class="facility-title">Early Years Discovery Hub</h3>
+                <p class="facility-desc">Safe, soft-fall play zones, sandbox exploration, and quiet reading nooks specifically designed for toddlers.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Carousel Controls -->
+          <div class="carousel-nav-controls">
+            <button class="carousel-arrow-btn" id="prevFacilityBtn" aria-label="Previous Facility">‹</button>
+            <div class="carousel-dots" id="facilityDots">
+              <span class="carousel-dot active"></span>
+              <span class="carousel-dot"></span>
+              <span class="carousel-dot"></span>
+            </div>
+            <button class="carousel-arrow-btn" id="nextFacilityBtn" aria-label="Next Facility">›</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         "Beyond The Classroom" Visual Mosaic (ICS Addis Style)
+         ========================================================================== -->
+    <section class="section section-cream" id="mosaic">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-eyebrow">Beyond the Classroom</span>
+          <h2 class="section-title">Passions, Talents & Purpose</h2>
+          <p class="section-subtitle">
+            A vibrant afternoon program developing balanced, well-rounded young leaders.
+          </p>
+        </div>
+
+        <div class="mosaic-grid">
+          
+          <!-- Tile 1: Taekwondo (Span 7) -->
+          <div class="mosaic-tile span-7">
+            <img src="https://nucleusinternationalschoolsystem.com/images/newsletter/summer-camp-2026/week5-taekwondo-group-pattern.webp" alt="Taekwondo Training" />
+            <div class="mosaic-overlay">
+              <span class="mosaic-tag">Discipline & Focus</span>
+              <h3 class="mosaic-title">Taekwondo & Martial Arts</h3>
+            </div>
+          </div>
+
+          <!-- Tile 2: Global Perspectives (Span 5) -->
+          <div class="mosaic-tile span-5">
+            <img src="https://nucleusinternationalschoolsystem.com/images/newsletter/inside-the-classroom/gp01-global-perspectives-class.webp" alt="Global Perspectives Class" />
+            <div class="mosaic-overlay">
+              <span class="mosaic-tag">Cambridge Curriculum</span>
+              <h3 class="mosaic-title">Global Perspectives & Debate</h3>
+            </div>
+          </div>
+
+          <!-- Tile 3: Robotics (Span 4) -->
+          <div class="mosaic-tile span-4">
+            <img src="https://nucleusinternationalschoolsystem.com/api/media/file/gallery-stem.webp" alt="Robotics Competition" />
+            <div class="mosaic-overlay">
+              <span class="mosaic-tag">STEM League</span>
+              <h3 class="mosaic-title">Robotics & Coding Challenges</h3>
+            </div>
+          </div>
+
+          <!-- Tile 4: Organic Agriculture (Span 4) -->
+          <div class="mosaic-tile span-4">
+            <img src="https://nucleusinternationalschoolsystem.com/images/stock/globe-3.webp" alt="Gardening and Botany" />
+            <div class="mosaic-overlay">
+              <span class="mosaic-tag">Environmental Stewardship</span>
+              <h3 class="mosaic-title">Urban Farming & Plant Care</h3>
+            </div>
+          </div>
+
+          <!-- Tile 5: Music & Performance (Span 4) -->
+          <div class="mosaic-tile span-4">
+            <img src="https://nucleusinternationalschoolsystem.com/api/media/file/gallery-sports.webp" alt="Music and Movement" />
+            <div class="mosaic-overlay">
+              <span class="mosaic-tag">Arts & Expression</span>
+              <h3 class="mosaic-title">Music, Drama & Movement</h3>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         "A Day at Nucleus" Interactive Daily Timeline
+         ========================================================================== -->
+    <section class="section" id="day-in-life">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-eyebrow">A Structured Life</span>
+          <h2 class="section-title">A Day at Nucleus</h2>
+          <p class="section-subtitle">
+            From the calm morning greeting to the vibrant afternoon clubs, every minute nurtures the whole child.
+          </p>
+        </div>
+
+        <!-- Timeline Nav Bar -->
+        <div class="timeline-nav-bar">
+          <button class="timeline-step-btn active" data-time-idx="0" type="button">
+            <div class="step-time">08:00 AM</div>
+            <div class="step-title">Safe Arrival</div>
+          </button>
+          <button class="timeline-step-btn" data-time-idx="1" type="button">
+            <div class="step-time">09:00 AM</div>
+            <div class="step-title">Cambridge Lessons</div>
+          </button>
+          <button class="timeline-step-btn" data-time-idx="2" type="button">
+            <div class="step-time">12:30 PM</div>
+            <div class="step-title">Chef Lunch</div>
+          </button>
+          <button class="timeline-step-btn" data-time-idx="3" type="button">
+            <div class="step-time">01:30 PM</div>
+            <div class="step-title">Robotics & Farm</div>
+          </button>
+          <button class="timeline-step-btn" data-time-idx="4" type="button">
+            <div class="step-time">03:00 PM</div>
+            <div class="step-title">Music & Sports</div>
+          </button>
+          <button class="timeline-step-btn" data-time-idx="5" type="button">
+            <div class="step-time">03:30 PM</div>
+            <div class="step-title">Dismissal</div>
+          </button>
+        </div>
+
+        <!-- Dynamic Timeline Display Card -->
+        <div class="timeline-display-card" id="timelineDisplayCard">
+          <div class="timeline-display-content">
+            <div class="timeline-clock-tag">
+              <span>⏰</span> <span id="dynTimeClock">08:00 AM – 08:30 AM</span>
+            </div>
+            <h3 class="timeline-display-title" id="dynTimeTitle">Safe Arrival & Welcoming Morning Circle</h3>
+            <p class="timeline-display-desc" id="dynTimeDesc">
+              Students are personally welcomed by name at the security gates. A calm, structured morning routine begins with homeroom check-in, setting positive intentions and daily goals.
+            </p>
+            <div>
+              <button class="btn btn-secondary" onclick="openTourModal()">Experience It Firsthand →</button>
+            </div>
+          </div>
+          <div class="timeline-display-media">
+            <img 
+              id="dynTimeImg"
+              src="https://nucleusinternationalschoolsystem.com/api/media/file/gallery-campus.webp" 
+              alt="Safe Arrival at Nucleus" 
+            />
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Multi-Campus Explorer & Totot Build Tracker
+         ========================================================================== -->
+    <section class="section section-cream" id="campuses">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-eyebrow">Our Campuses in Addis Ababa</span>
+          <h2 class="section-title">Easily Accessible Across the City</h2>
+          <p class="section-subtitle">
+            Serving families across Sarbet, Mekanisa, Bisrate Gabriel, Lebu, Old Airport, Bole, and Kazanchis.
+          </p>
+        </div>
+
+        <!-- Campus Selector Tabs -->
+        <div class="campus-tabs">
+          <button class="campus-tab-btn active" data-campus="vatican" type="button">
+            Grade School (Vatican Campus)
+          </button>
+          <button class="campus-tab-btn" data-campus="abo" type="button">
+            Preschool (Mekanisa Abo Campus)
+          </button>
+          <button class="campus-tab-btn" data-campus="totot" type="button">
+            🚧 Totot Expansion (Coming Soon)
+          </button>
+        </div>
+
+        <!-- Vatican Campus Panel -->
+        <div class="campus-content-panel active" id="campus-vatican">
+          <div class="campus-grid-layout">
+            <div class="campus-info-col">
+              <span class="campus-badge-name">Grades 1 through 8</span>
+              <h3 class="campus-h3">Sarbet Vatican Campus</h3>
+              
+              <div class="campus-detail-list">
+                <div class="campus-detail-item">
+                  <div class="campus-icon-box">📍</div>
+                  <div>
+                    <div class="campus-item-label">Location</div>
+                    <div class="campus-item-val">Sarbet Vatican, 50 meters behind the Vatican Embassy, Addis Ababa</div>
+                  </div>
+                </div>
+                <div class="campus-detail-item">
+                  <div class="campus-icon-box">📞</div>
+                  <div>
+                    <div class="campus-item-label">Direct Lines</div>
+                    <div class="campus-item-val"><a href="tel:0981999922">09 81 99 99 22</a> · <a href="tel:0981999933">09 81 99 99 33</a></div>
+                  </div>
+                </div>
+                <div class="campus-detail-item">
+                  <div class="campus-icon-box">🕒</div>
+                  <div>
+                    <div class="campus-item-label">School Hours</div>
+                    <div class="campus-item-val">Monday – Friday: 8:00 AM – 3:30 PM (After-school clubs until 4:45 PM)</div>
+                  </div>
+                </div>
+              </div>
+
+              <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                <button class="btn btn-primary" onclick="openTourModal()">Schedule Visit at Vatican</button>
+                <a href="https://maps.app.goo.gl/DHQMbtpZc7PBDWEF8" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                  Open Google Maps
+                </a>
+              </div>
+            </div>
+
+            <div class="campus-map-embed">
+              <iframe 
+                title="Grade School Vatican Campus Location"
+                src="https://www.google.com/maps?q=Nucleus+International+Schools,+Addis+Ababa&amp;z=17&amp;hl=en&amp;output=embed" 
+                loading="lazy">
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- Abo Campus Panel -->
+        <div class="campus-content-panel" id="campus-abo">
+          <div class="campus-grid-layout">
+            <div class="campus-info-col">
+              <span class="campus-badge-name">Ages 2 to 5 • Early Years Hub</span>
+              <h3 class="campus-h3">Mekanisa Abo Campus</h3>
+              
+              <div class="campus-detail-list">
+                <div class="campus-detail-item">
+                  <div class="campus-icon-box">📍</div>
+                  <div>
+                    <div class="campus-item-label">Location</div>
+                    <div class="campus-item-val">Abo Mekanisa Campus, 100 meters from Mekanisa Abo Square, Addis Ababa</div>
+                  </div>
+                </div>
+                <div class="campus-detail-item">
+                  <div class="campus-icon-box">📞</div>
+                  <div>
+                    <div class="campus-item-label">Preschool Admissions</div>
+                    <div class="campus-item-val"><a href="tel:0981999922">09 81 99 99 22</a></div>
+                  </div>
+                </div>
+                <div class="campus-detail-item">
+                  <div class="campus-icon-box">🧸</div>
+                  <div>
+                    <div class="campus-item-label">Specialized Spaces</div>
+                    <div class="campus-item-val">Sensory sand gardens, soft play nap quarters, toddler dining room</div>
+                  </div>
+                </div>
+              </div>
+
+              <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                <button class="btn btn-primary" onclick="openTourModal()">Schedule Visit at Abo</button>
+                <a href="https://maps.app.goo.gl/BodKtkUxY6JiBKDz5" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                  Open Google Maps
+                </a>
+              </div>
+            </div>
+
+            <div class="campus-map-embed">
+              <iframe 
+                title="Preschool Abo Campus Location"
+                src="https://www.google.com/maps?q=8.9817515,38.7337897&amp;z=17&amp;hl=en&amp;output=embed" 
+                loading="lazy">
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- Totot Campus Tracker Panel -->
+        <div class="campus-content-panel" id="campus-totot">
+          <div class="totot-tracker-card">
+            <div class="totot-tracker-header">
+              <div>
+                <span class="badge-pulse" style="margin-bottom: 0.75rem;">Opening 2026/27</span>
+                <h3 style="font-family: var(--font-display); font-size: 2.2rem; font-weight: 800;">
+                  Totot Campus: In Final Finishing
+                </h3>
+                <p style="color: rgba(255, 255, 255, 0.8); max-width: 620px; margin-top: 0.5rem;">
+                  Located behind World Vision in Addis Ababa. Construction is complete, and interior architectural 
+                  fittings, science labs, and custom classroom furniture are currently being installed.
+                </p>
+              </div>
+              <div style="text-align: right;">
+                <div style="font-family: var(--font-display); font-size: 3rem; font-weight: 800; color: var(--color-ochre-400);">78%</div>
+                <div style="font-size: 0.82rem; text-transform: uppercase; color: rgba(255, 255, 255, 0.7);">Build Progress</div>
+              </div>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="progress-track-outer">
+              <div class="progress-track-fill"></div>
+            </div>
+
+            <!-- 4 Milestones -->
+            <div class="totot-milestones-grid">
+              <div class="milestone-item">
+                <div class="milestone-status">Phase 1 • Complete ✓</div>
+                <div class="milestone-name">Site & Structure</div>
+                <div class="milestone-desc">4-story academic block fully erected</div>
+              </div>
+              <div class="milestone-item">
+                <div class="milestone-status">Phase 2 • Complete ✓</div>
+                <div class="milestone-name">Utilities & MEP</div>
+                <div class="milestone-desc">High-speed wiring, water purification & power backup</div>
+              </div>
+              <div class="milestone-item active">
+                <div class="milestone-status">Phase 3 • In Progress ⚡</div>
+                <div class="milestone-name">Finishing Touches</div>
+                <div class="milestone-desc">Lab installations, soundproofing & interior design</div>
+              </div>
+              <div class="milestone-item">
+                <div class="milestone-status">Phase 4 • Upcoming</div>
+                <div class="milestone-name">Doors Open</div>
+                <div class="milestone-desc">Welcoming new student cohort</div>
+              </div>
+            </div>
+
+            <div style="margin-top: 2.5rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; border-top: 1px solid rgba(255, 255, 255, 0.15); padding-top: 1.5rem;">
+              <span style="font-size: 0.9rem; color: rgba(255, 255, 255, 0.75);">
+                Want priority early registration for our Totot Campus?
+              </span>
+              <button class="btn btn-primary" onclick="openTourModal()">Register for Totot Updates</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Interactive Tuition & Grade Fee Estimator
+         ========================================================================== -->
+    <section class="section" id="admissions">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-eyebrow">Financial Transparency</span>
+          <h2 class="section-title">Tuition & Fee Transparency Calculator</h2>
+          <p class="section-subtitle">
+            We believe in honest, upfront pricing with zero hidden capital surprise fees. 
+            Customize your child's grade and optional services below to see an instant estimate.
+          </p>
+        </div>
+
+        <div class="estimator-card">
+          <div class="estimator-grid">
+            
+            <!-- Left Form Controls -->
+            <div>
+              <div class="estimator-form-group">
+                <label class="estimator-label">1. Select Grade Level:</label>
+                <div class="grade-pill-selector">
+                  <button class="grade-option-btn active" data-grade-val="early" type="button">
+                    Early Years (Ages 2–4)
+                  </button>
+                  <button class="grade-option-btn" data-grade-val="primary-lower" type="button">
+                    Lower Primary (Grades 1–3)
+                  </button>
+                  <button class="grade-option-btn" data-grade-val="primary-upper" type="button">
+                    Upper Primary (Grades 4–5)
+                  </button>
+                  <button class="grade-option-btn" data-grade-val="secondary" type="button">
+                    Lower Secondary (Grades 6–8)
+                  </button>
+                </div>
+              </div>
+
+              <div class="estimator-form-group">
+                <label class="estimator-label">2. Optional Services & Add-ons:</label>
+                <div class="addon-checkboxes">
+                  <label class="addon-label-card">
+                    <span>
+                      <strong>Chef-Prepared Nutrition Plan</strong>
+                      <br /><small style="color: var(--color-text-muted);">Hot lunch, organic morning snack & afternoon fruit</small>
+                    </span>
+                    <input type="checkbox" id="addonMeals" checked />
+                  </label>
+
+                  <label class="addon-label-card">
+                    <span>
+                      <strong>School Bus Door-to-Door Transport</strong>
+                      <br /><small style="color: var(--color-text-muted);">Sarbet, Old Airport, Mekanisa, Bole, or Lebu routes</small>
+                    </span>
+                    <input type="checkbox" id="addonTransport" checked />
+                  </label>
+
+                  <label class="addon-label-card">
+                    <span>
+                      <strong>After-School Robotics & Clubs</strong>
+                      <br /><small style="color: var(--color-text-muted);">Taekwondo, Robotics League, Coding, Music</small>
+                    </span>
+                    <input type="checkbox" id="addonRobotics" checked />
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Summary Panel -->
+            <div class="estimator-summary-panel">
+              <div>
+                <div class="summary-title">Estimated Term Breakdown</div>
+                <div class="summary-breakdown">
+                  <div class="summary-row">
+                    <span id="summaryGradeName">Early Years Cambridge Tuition</span>
+                    <span id="summaryTuitionVal" style="font-weight: 700;">Included</span>
+                  </div>
+                  <div class="summary-row">
+                    <span>Cambridge Textbooks & Lab Kits</span>
+                    <span style="font-weight: 700; color: var(--color-emerald-500);">Included</span>
+                  </div>
+                  <div class="summary-row">
+                    <span>Chef-Prepared Nutrition Plan</span>
+                    <span id="summaryMealVal" style="font-weight: 700;">Included</span>
+                  </div>
+                  <div class="summary-row">
+                    <span>Door-to-Door Bus Transportation</span>
+                    <span id="summaryTransportVal" style="font-weight: 700;">Selected</span>
+                  </div>
+                  <div class="summary-row">
+                    <span>After-School Clubs & Robotics</span>
+                    <span id="summaryClubVal" style="font-weight: 700;">Selected</span>
+                  </div>
+
+                  <div class="summary-row total-row">
+                    <span>All-Inclusive Value:</span>
+                    <span class="summary-total-val" id="summaryTotalLabel">Tier 1 Plan</span>
+                  </div>
+                </div>
+              </div>
+
+              <div style="border-top: 1px solid rgba(255, 255, 255, 0.15); padding-top: 1.25rem;">
+                <p style="font-size: 0.8rem; color: rgba(255, 255, 255, 0.7); margin-bottom: 1rem;">
+                  *Discounts available for annual advance payment and sibling enrollment.
+                </p>
+                <button class="btn btn-primary" onclick="openTourModal()" style="width: 100%;">
+                  Request Full Fee Schedule PDF
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Parent Testimonials ("Voices of Nucleus")
+         ========================================================================== -->
+    <section class="section section-cream" id="testimonials">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-eyebrow">Parent Experiences</span>
+          <h2 class="section-title">Loved by Nucleus Families</h2>
+          <p class="section-subtitle">
+            Hear what diplomatic parents, expats, and local Ethiopian leaders say about our community.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          
+          <!-- Testimonial 1 -->
+          <article class="testimonial-card">
+            <div>
+              <div class="test-stars">★★★★★</div>
+              <blockquote class="test-quote">
+                “For the first time, I drop my daughter off without worrying. The security behind the Vatican embassy 
+                and the attentive care from teachers are unlike anywhere else we have been in Addis Ababa.”
+              </blockquote>
+            </div>
+            <div class="test-author-row">
+              <div class="test-avatar">DR</div>
+              <div>
+                <div class="test-author-name">Diplomatic Family</div>
+                <div class="test-author-sub">Parent of Early Years Student • Vatican Campus</div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Testimonial 2 -->
+          <article class="testimonial-card">
+            <div>
+              <div class="test-stars">★★★★★</div>
+              <blockquote class="test-quote">
+                “The robotics lab and the campus garden are incredible. My son comes home talking enthusiastically about 
+                what he programmed and what he planted. He is genuinely excited to learn every single day.”
+              </blockquote>
+            </div>
+            <div class="test-author-row">
+              <div class="test-avatar">MT</div>
+              <div>
+                <div class="test-author-name">Mekdes T.</div>
+                <div class="test-author-sub">Parent of Grade 4 Student • Primary Stage</div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Testimonial 3 -->
+          <article class="testimonial-card">
+            <div>
+              <div class="test-stars">★★★★★</div>
+              <blockquote class="test-quote">
+                “A genuine international standard with foreign and multilingual teachers. Above all, they were transparent 
+                about fees from day one with zero hidden surprises.”
+              </blockquote>
+            </div>
+            <div class="test-author-row">
+              <div class="test-avatar">JG</div>
+              <div>
+                <div class="test-author-name">Johannes & Sarah G.</div>
+                <div class="test-author-sub">Expatriate Parents • Grade 7 Middle School</div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Interactive FAQ Accordion
+         ========================================================================== -->
+    <section class="section" id="faqs">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-eyebrow">Got Questions?</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-subtitle">
+            Everything you need to know about curriculum, admissions, fees, and campus life.
+          </p>
+        </div>
+
+        <div class="faq-container">
+          
+          <div class="faq-item">
+            <button class="faq-trigger" type="button">
+              <span>What curriculum does Nucleus follow?</span>
+              <span class="faq-icon-rot">+</span>
+            </button>
+            <div class="faq-content">
+              <p>
+                Nucleus teaches the official Cambridge International Pathway from Early Years through Grade 8. 
+                It is a globally recognized, rigorous curriculum respected by universities and international schools 
+                worldwide, making it completely portable if your family relocates internationally.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" type="button">
+              <span>What age groups and grades do you accept?</span>
+              <span class="faq-icon-rot">+</span>
+            </button>
+            <div class="faq-content">
+              <p>
+                We accept children from age 2 (Toddler & Early Years) through Grade 8 (Lower Secondary / Cambridge Checkpoint). 
+                Students transition smoothly between our specialized Early Years Abo Campus and our Grade School Vatican Campus.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" type="button">
+              <span>Where are the campuses located?</span>
+              <span class="faq-icon-rot">+</span>
+            </button>
+            <div class="faq-content">
+              <p>
+                We currently have two operational campuses: 
+                <strong>1. Vatican Grade School Campus:</strong> Sarbet Vatican, 50m behind the Vatican Embassy. 
+                <strong>2. Abo Preschool Campus:</strong> 100m from Mekanisa Abo Square. 
+                Our third campus at <strong>Totot</strong> (behind World Vision) is opening soon.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" type="button">
+              <span>How are tuition and fees handled?</span>
+              <span class="faq-icon-rot">+</span>
+            </button>
+            <div class="faq-content">
+              <p>
+                We maintain total transparency with no hidden capital building funds. Tuition covers textbooks, 
+                Cambridge learning materials, and basic laboratory equipment. Optional services include chef-prepared nutrition 
+                and door-to-door bus transportation. Call our admissions team on 09 81 99 99 22 for your child's grade breakdown.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" type="button">
+              <span>How secure is the campus environment?</span>
+              <span class="faq-icon-rot">+</span>
+            </button>
+            <div class="faq-content">
+              <p>
+                Safety is our highest priority. Located inside the quiet embassy enclave behind the Vatican Embassy, 
+                our campus features controlled perimeter gating, visitor identity verification, and 24/7 guarded premises.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" type="button">
+              <span>Cambridge vs. IB: What makes Cambridge right for my child?</span>
+              <span class="faq-icon-rot">+</span>
+            </button>
+            <div class="faq-content">
+              <p>
+                Both are prestigious curricula. While the IB is heavily project-based, Cambridge offers unmatched academic structure, 
+                clear external benchmarks (Cambridge Primary and Secondary Checkpoints), and rigorous focus on mathematics, 
+                sciences, and English fundamentals that give students ironclad academic confidence.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         From The Blog & News (Stories from Nucleus)
+         ========================================================================== -->
+    <section class="section section-cream" id="blog">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-eyebrow">Community & Insights</span>
+          <h2 class="section-title">Latest from Nucleus</h2>
+          <p class="section-subtitle">
+            Perspectives on international education, parenting in Addis Ababa, and school activities.
+          </p>
+        </div>
+
+        <div class="blog-grid">
+          
+          <!-- Article 1 -->
+          <article class="blog-card">
+            <div class="blog-img-wrap">
+              <img src="https://nucleusinternationalschoolsystem.com/images/newsletter/inside-the-classroom/gp01-global-perspectives-class.webp" alt="Cambridge Global Perspectives" />
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-cat-tag">Academics</span>
+              <h3 class="blog-title">Cambridge Global Perspectives Explained: What Your Child Actually Learns</h3>
+              <p class="blog-summary">
+                Global Perspectives appears on almost every international curriculum list, but few explain it. 
+                Here is what the subject actually contains and how our students in Addis Ababa practice critical inquiry.
+              </p>
+              <a href="#" class="blog-read-more">Read Full Story →</a>
+            </div>
+          </article>
+
+          <!-- Article 2 -->
+          <article class="blog-card">
+            <div class="blog-img-wrap">
+              <img src="https://nucleusinternationalschoolsystem.com/images/newsletter/summer-camp-2026/week5-taekwondo-group-pattern.webp" alt="Taekwondo for Kids" />
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-cat-tag">Parent Resources</span>
+              <h3 class="blog-title">Taekwondo Classes for Kids in Addis Ababa: What Parents Should Look For</h3>
+              <p class="blog-summary">
+                Martial arts build immense focus and emotional regulation. Here is what a high-quality children’s class 
+                looks like and what questions you should ask before enrolling.
+              </p>
+              <a href="#" class="blog-read-more">Read Full Story →</a>
+            </div>
+          </article>
+
+          <!-- Article 3 -->
+          <article class="blog-card">
+            <div class="blog-img-wrap">
+              <img src="https://nucleusinternationalschoolsystem.com/images/newsletter/teachers-cbt/cbt02-founder-address.webp" alt="Critical Thinking in Ethiopia" />
+            </div>
+            <div class="blog-card-body">
+              <span class="blog-cat-tag">Pedagogy</span>
+              <h3 class="blog-title">Teaching Critical Thinking & Problem Solving to Children in Ethiopia</h3>
+              <p class="blog-summary">
+                Traditional classrooms often reward memorization. Here is what real problem-solving looks like at 
+                the primary stage, and how parents can encourage curiosity at home.
+              </p>
+              <a href="#" class="blog-read-more">Read Full Story →</a>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       Main Footer & Social Links
+       ========================================================================== -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Brand Column -->
+        <div>
+          <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.5rem;">
+            <img
+              src="https://nucleusinternationalschoolsystem.com/api/media/file/nucleus-logo.webp"
+              alt="Nucleus International Schools"
+              style="height:48px;width:auto;object-fit:contain;filter:brightness(0) invert(1);"
+              onerror="this.onerror=null;this.style.display='none';this.nextElementSibling.style.display='flex';"
+            />
+            <div class="brand-logo-emblem" style="width:42px;height:42px;font-size:1.25rem;display:none;">N</div>
+            <div style="font-family: var(--font-display); font-weight: 800; font-size: 1.4rem; color: #fff;">
+              NUCLEUS
+            </div>
+          </div>
+          <p class="footer-brand-desc">
+            An international Cambridge school raising self-aware thinkers, creators, and compassionate leaders in Addis Ababa, Ethiopia.
+          </p>
+          <div class="footer-amharic-badge">
+            « ትምህርት ከደብተር ያልፋል »
+          </div>
+          <div class="footer-social-row">
+            <a href="https://www.facebook.com/NucleusDaycare/" target="_blank" rel="noopener noreferrer" class="social-circle-link" aria-label="Facebook">f</a>
+            <a href="https://www.instagram.com/nucleusintschools/" target="_blank" rel="noopener noreferrer" class="social-circle-link" aria-label="Instagram">ig</a>
+            <a href="https://www.tiktok.com/@nucleusintschools" target="_blank" rel="noopener noreferrer" class="social-circle-link" aria-label="TikTok">tk</a>
+            <a href="https://www.youtube.com/@Nucleusintschools" target="_blank" rel="noopener noreferrer" class="social-circle-link" aria-label="YouTube">yt</a>
+            <a href="https://www.linkedin.com/company/nucleus-international-daycare" target="_blank" rel="noopener noreferrer" class="social-circle-link" aria-label="LinkedIn">in</a>
+          </div>
+        </div>
+
+        <!-- Academic Links -->
+        <div>
+          <div class="footer-col-title">Academics</div>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="#pathway">Cambridge Pathway</a></li>
+            <li class="footer-link-item"><a href="#academics">Robotics & STEM Labs</a></li>
+            <li class="footer-link-item"><a href="#experience">Early Years Foundation</a></li>
+            <li class="footer-link-item"><a href="#pathway">Primary Checkpoint</a></li>
+            <li class="footer-link-item"><a href="#pathway">Lower Secondary G6-G8</a></li>
+            <li class="footer-link-item"><a href="#mosaic">Extracurriculars</a></li>
+          </ul>
+        </div>
+
+        <!-- Admissions & Visit -->
+        <div>
+          <div class="footer-col-title">Admissions</div>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="#admissions">Tuition & Fee Calculator</a></li>
+            <li class="footer-link-item"><a href="javascript:openTourModal()">Book a Campus Tour</a></li>
+            <li class="footer-link-item"><a href="#campuses">Campus Locations</a></li>
+            <li class="footer-link-item"><a href="#campuses">Totot Expansion 2026</a></li>
+            <li class="footer-link-item"><a href="#faqs">Parents FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Direct Contact -->
+        <div>
+          <div class="footer-col-title">Visit & Connect</div>
+          <div class="footer-contact-info">
+            <div class="footer-contact-item">
+              <span>📍</span>
+              <span><strong>Vatican Campus:</strong> Sarbet Vatican, 50m behind Vatican Embassy</span>
+            </div>
+            <div class="footer-contact-item">
+              <span>📍</span>
+              <span><strong>Abo Campus:</strong> 100m from Mekanisa Abo Square</span>
+            </div>
+            <div class="footer-contact-item">
+              <span>📞</span>
+              <span><a href="tel:0981999922">09 81 99 99 22</a> / <a href="tel:0981999933">09 81 99 99 33</a></span>
+            </div>
+            <div class="footer-contact-item">
+              <span>🕒</span>
+              <span>Mon–Fri: 8:00 AM – 3:30 PM</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>
+          © 2026 Nucleus International Schools. Teaching the International Cambridge Curriculum in Addis Ababa, Ethiopia.
+        </div>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="#" style="color: inherit;">Privacy Policy</a>
+          <a href="#" style="color: inherit;">Terms of Enrollment</a>
+          <a href="#" style="color: inherit;">Parent Portal</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       Interactive Modals (Book Campus Tour & Video Player)
+       ========================================================================== -->
+
+  <!-- Book a Tour Modal -->
+  <div class="modal-backdrop" id="tourModalBackdrop">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="closeTourModalBtn" type="button">&times;</button>
+      <div class="modal-header-block">
+        <h3 class="modal-title">Schedule a Campus Tour</h3>
+        <p class="modal-subtitle">
+          Experience our classrooms, STEM lab, and meet our teachers in person.
+        </p>
+      </div>
+      <form class="modal-body-form" id="tourForm" onsubmit="handleTourSubmit(event)">
+        <div class="form-grid-2">
+          <div>
+            <label class="estimator-label">Parent / Guardian Name *</label>
+            <input type="text" class="form-input-field" placeholder="e.g. Dr. Abebe / Sarah Smith" required />
+          </div>
+          <div>
+            <label class="estimator-label">Phone Number *</label>
+            <input type="tel" class="form-input-field" placeholder="09 12 34 56 78" required />
+          </div>
+        </div>
+
+        <div class="form-grid-2">
+          <div>
+            <label class="estimator-label">Email Address</label>
+            <input type="email" class="form-input-field" placeholder="name@example.com" />
+          </div>
+          <div>
+            <label class="estimator-label">Child's Age / Grade *</label>
+            <select class="form-input-field" required>
+              <option value="">Select Child's Grade</option>
+              <option value="early-2-3">Early Years (Age 2–3)</option>
+              <option value="kg1-2">Kindergarten (Age 4–5)</option>
+              <option value="primary-1-3">Primary Grade 1–3</option>
+              <option value="primary-4-5">Primary Grade 4–5</option>
+              <option value="secondary-6-8">Lower Secondary Grade 6–8</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-grid-2">
+          <div>
+            <label class="estimator-label">Preferred Campus *</label>
+            <select class="form-input-field" required>
+              <option value="vatican">Sarbet Vatican Campus (Grade School)</option>
+              <option value="abo">Mekanisa Abo Campus (Preschool / Early Years)</option>
+              <option value="totot">Totot Campus (Waitlist / Updates)</option>
+            </select>
+          </div>
+          <div>
+            <label class="estimator-label">Preferred Date *</label>
+            <input type="date" class="form-input-field" required />
+          </div>
+        </div>
+
+        <div style="margin-top: 1.5rem;">
+          <button type="submit" class="btn btn-primary" style="width: 100%; padding: 0.9rem;">
+            Confirm Tour Booking <span>✓</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Video Film Player Modal -->
+  <div class="modal-backdrop" id="videoModalBackdrop">
+    <div class="modal-card" style="max-width: 820px; background: #000; padding: 0;">
+      <button class="modal-close-btn" id="closeVideoModalBtn" style="color: #fff; background: rgba(255,255,255,0.2);">&times;</button>
+      <div style="aspect-ratio: 16/9; width: 100%; background: #000; display: flex; align-items: center; justify-content: center;">
+        <video 
+          id="brandVideoPlayer"
+          controls 
+          style="width: 100%; height: 100%;"
+          poster="https://nucleusinternationalschoolsystem.com/video/tvc-teaser-poster.webp"
+        >
+          <source src="https://nucleusinternationalschoolsystem.com/video/nucleus-tvc-en.mp4" type="video/mp4" />
+          Your browser does not support HTML5 video.
+        </video>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript Logic -->
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
